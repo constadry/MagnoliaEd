@@ -1,0 +1,341 @@
+*, 
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+/* To show border of all el */
+/** {
+   outline: 1px solid rebeccapurple;
+}*/
+
+html { 
+  scroll-behavior: smooth; 
+}
+
+body {
+	margin: 0 auto;
+	font-size: 24px;
+	max-width: 1360px;
+	/*min-width: 1366px;*/
+}
+
+img {
+	max-width: 100%;
+}
+
+@media (max-width: 1360px) {
+	body {
+		max-width: 1200px;
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 1222px) {
+	body {
+		max-width: 970px;
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 992px) {
+	body {
+		max-width: 750px;
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 767px) {
+	body {
+		max-width: none;
+		font-size: 12px;
+	}
+}
+
+.header {
+	height: 20%;
+}
+
+/* MagnoliaEd */
+.logo {
+	text-align: center;
+	font-size: 74px;
+	font-family: 'Lobster', cursive;
+	margin: 2% 0 2% 0;
+}
+
+.intro {
+	height: 660px;
+	color: #fff;
+	text-align: center;
+	background: url("../images/header.jpg") center no-repeat;
+}
+
+/* Motto */
+.intro__header {
+	font-size: 310%;
+	font-family: Arial;	
+	padding-top: 100px;
+	margin-bottom: 20px;
+}
+
+.intro__content {
+	margin: 0 25% 0 25%;
+	line-height: 0.9;
+}
+
+.intro__aboutusbtn {
+	margin: 5% 43% 0 43%;
+	border: solid 4px;
+	border-radius: 50px;
+	transition: color .1s linear;
+}
+
+.intro__aboutusbtn:hover {
+	background: #fff;
+	color: #181a1b;
+}
+
+.aboutus {
+	height: 580px;
+}
+
+.aboutus__title__conteiner {
+	justify-content: space-between;
+	height: 17%;
+	margin: 0.9% 0 0.6% 0;
+}
+
+.aboutus__title {
+	text-align: center;
+	font-family: Arial Bold;
+	font-size: 250%;
+	display: inline-block;
+	width: 15%;
+}
+
+.aboutus__title__line {
+	width: 42%;
+	height: 10%;
+	background: #000;
+	display: inline-block;
+	margin-bottom: 1.01%;
+}
+
+@media (max-width: 767px) {
+	.aboutus__title__line {
+		width: 0;
+	}
+	.aboutus__title {
+		width: 100%;
+	}
+}
+
+.aboutus__content {
+	font-family: Arial;
+	font-size: 19px;
+	width: 40%;
+	margin-left: 15px;
+	display: inline-block;
+}
+
+.aboutus__img {
+	background: center no-repeat;
+	height: 85%;
+	width: 50%;
+	display: inline-block;
+	float: right;
+}
+
+.course__title {
+	margin: 45px 0 35px 0;
+	text-align: center;
+	font-family: Arial Bold;
+	font-size: 62px;
+}
+
+.course__title::before,
+.course__title::after
+ {
+	background-color: #000;
+	content: "";
+
+	display: block;
+	width: 40%;
+	height: 12px;
+	position: relative;
+	top: 40px;
+}
+
+.course__title::after {
+	left: 60%;
+	top: -42px;
+}
+
+.course__main_inf {
+	border: solid 2px;
+	border-radius: 8px;
+	height: 280px;
+	width: 940px;
+	margin: 27px;
+	margin-left: 80px;
+}
+
+.course__main_inf_img {
+	width: 135px;
+	height: 168px;
+	position: relative;
+	top: -155px;
+	left: 760px;
+	background: url("../images/thread.jpg") center no-repeat;
+}
+
+.course__main_inf_time {
+	margin: 18px;
+	float: left;
+	width: 350px;
+	height: 45px;
+	display: inline-block;
+}
+
+.course__main_inf_connection {
+	width: 265px;
+	height: 75px;
+	float: center;
+	margin: 18px;
+	margin-left: 100px;
+	display: inline-block;
+}
+
+.course__main_inf_practic {
+	width: 280px;
+	height: 110px;
+	margin: 18px;
+}
+
+.course__learnabout {
+	line-height: 1.4;
+	margin-left: 80px;
+}
+
+.course__needle__img {
+	background: url("../images/needle.jpg") center no-repeat;
+	width: 314px;
+	height: 248px;
+	margin: 63px 40px 30px 30px;
+	display: inline-block;
+}
+
+.course__workway {
+	display: inline-block;
+	width: 814px;
+	height: 248px;
+	float: right;
+	margin: 63px 40px 30px 30px;
+	border: solid 3px;
+	text-align: center;
+}
+
+.course__program {
+	position: relative;
+	left: 300px;
+	top: 50px;
+	border: solid 3px;
+	border-radius: 18px;
+	height: 600px;
+	width: 800px;
+	line-height: 2;
+}
+
+.course__program__title {
+	margin: 2px;
+	font-size: 30px;
+	font-family: Arial Bold;
+}
+
+.course__program__line {
+	margin: 4px;
+}
+
+.course__program__line::after {
+	display: block;
+	height: 2px;
+	position: relative;
+	top: -8px;
+	left: 20px;
+	width: 600px;
+	background: #000;
+	content: "";
+}
+.contacts__userdata {
+	width: 400px;
+}
+
+.contacts__title {
+	margin: 95px 0 35px 0;
+	text-align: center;
+	font-family: Arial Bold;
+	font-size: 62px;
+}
+
+.contacts__title::before,
+.contacts__title::after
+ {
+	background-color: #000;
+	content: "";
+
+	display: block;
+	width: 39%;
+	height: 12px;
+	position: relative;
+	top: 40px;
+}
+
+.contacts__title::after {
+	left: 61%;
+	top: -42px;
+}
+
+.contacts__address {
+	margin-top: 30px;
+	margin-left: 46px;
+}
+
+.contacts__phone {
+	margin-top: 10px;
+	margin-left: 46px;
+}
+
+.contacts__userdata {
+	position: relative;
+	left: 530px;
+	top: -60px;
+	font-size: 32px;
+}
+
+.contacts__userdata__name {
+	width: 300px;
+}
+
+.contacts__userdata__email {
+	width: 300px;
+}
+
+.contacts__userdata__phone {
+	width: 150px;
+}
+
+.contacts__userdata__textarea {
+	width: 600px;
+	height: 200px;
+
+}
+
+.contacts__userdata__push {
+	height: 35px;
+	background: #666677;
+	color: #fff;
+	text-align: center;
+	width: 80px;
+	border: none;
+}

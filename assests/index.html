@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0 user-scalable=0">
+	<!-- <meta name="viewport" content="width=1366px"> -->
+	<title>MagnoliaEd</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<script src="scripts.js"></script> 
+</head>
+<body>
+	<div class="header" id="header">
+		<div class="logo"> MagnoliaEd </div>
+		<div class="intro">
+			<div class="intro__header">Девиз компании</div>
+			<div class="intro__content">Это текст. Нажмите один раз и выберите «Редактировать текст» или просто кликните дважды, чтобы добавить свой текст и настроить шрифт. Здесь вы можете рассказать посетителям подробнее о себе.</div>
+			<div class="intro__aboutusbtn" onclick="window.scrollTo(0,document.getElementById('header').scrollHeight + 55);">О нас</div>
+		</div>
+	</div>
+	<div class="aboutus">
+		<div class="aboutus__title__conteiner">
+			<div class="aboutus__title__line"></div>
+			<div class="aboutus__title">О нас</div>
+			<div class="aboutus__title__line"></div>
+		</div>
+		
+		<div class="aboutus__content">Я, Галина Адрианова, и это мой частный проект, в котором я научу вас не просто ремонтировать, чинить и видоизменять одежду, но и зарабатывать на этом настоящие деньги. Когда я начинала... Далее идёт рассказ о том, через что вам всем придётся пройти, и сколько на этом можно зарабатывать. (Примерный вариант: воспоминания о тяжёлом трудоустройстве, работе на заводе, на дому и т.п. Далее следует переход к рассказу о своём деле, какие доходы можно иметь и какие трудности, возникли уже на этом этапе, переезды, обман со стороны арендаторов и сотрудников(риск), клиенты, развитие инфраструктуры, рассказ должен помочь людям сделать правильный выбор: в начале получить опыт, а уже потом начинать своё дело.) После этого рассказываем о том, что лучшие получат возможность работать с нами на определённых условиях.</div>
+		<div class="aboutus__img"><img src="../images/aboutus.jpg" alt="scissors"></div>
+	</div>
+	<div class="course">
+		<div class="course__title">О курсе</div>
+		<div class="course__main_inf">
+			<div class="course__main_inf_content">
+				<div class="course__main_inf_time"><strong>Длительность:</strong> 1 месяц</div>
+				<div class="course__main_inf_connection"><strong>Обратная связь:</strong><br/>Преподаватель будет всегда с вами на связи</div>
+				<div class="course__main_inf_practic"><strong>Практика:</strong><br/>С первых уроков вы будете работать на настоящем оборудовании с настоящими материалами</div>
+			</div>
+			<div class="course__main_inf_img"></div>
+		</div>
+		<div class="course__learnabout"><strong style="font-size: 38px">Чему вы научитесь?</strong><br/>&ndash; Ремонт, переделка, посадка по фигуре всех видов одежды, от лёгкой до зимней.<br/>&ndash; Подшив джинсов, классических брюк, спортивных брюк, юбок.<br/>&ndash; Замена молний</div>
+		<div class="course__needle__img"></div>
+		<div class="course__workway">Как будет проходить занятие</div>
+		<div class="course__program">
+			<div class="course__program__title">Программа курса</div> 
+			<div class="course__program__line">1.</div>
+			<div class="course__program__line">2.</div>
+			<div class="course__program__line">3.</div>
+			<div class="course__program__line">4.</div>
+			<div class="course__program__line">5.</div>
+		</div>
+	</div>
+	<div class="contacts">
+		<div class="contacts__title">Контакты</div>
+		<div class="contacts__address">Ул. Коституционная 63, Ростов-на-Дону</div>
+		<div class="contacts__phone">Телефон: +7 (951) 8270 540</div>
+		<div class="contacts__userdata">
+			<input type="text" placeholder="Имя" class="contacts__userdata__name"> <br/>
+			<input type="text" placeholder="Почта" class="contacts__userdata__email"> <br/>
+			<input type="text" placeholder="Телефон" class="contacts__userdata__phone"> <br/>
+			<textarea class="contacts__userdata__textarea"> </textarea> <br/>
+			<input type="button" value="Отправить" class="contacts__userdata__push"> <br/>
+		</div>
+	</div>	
+</body>
+</html>
